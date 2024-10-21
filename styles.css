@@ -1,14 +1,18 @@
+/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
+/* Header styling */
 header {
     background-color: #333;
     color: #fff;
@@ -29,6 +33,7 @@ header {
     margin-bottom: 10px;
 }
 
+/* Navigation styling */
 nav ul {
     list-style: none;
     display: flex;
@@ -46,10 +51,13 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Section styling */
 section {
     padding: 20px;
     margin: 10px;
-    background: #f4f4f4;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 h2 {
@@ -57,28 +65,12 @@ h2 {
     margin-bottom: 10px;
 }
 
-.project, .skills, .achievements, .contact {
+/* Project, Skills, and Education styling */
+.project, .skills, .achievements, .contact, .coding-profiles {
     margin: 20px 0;
 }
 
-.project-image, .section-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
+/* Education items */
 .education-item {
     display: flex;
     align-items: center;
@@ -91,16 +83,27 @@ footer {
     margin-right: 20px;
 }
 
-.education-details h3 {
-    margin: 0;
-    font-size: 18px;
+/* Coding profiles section */
+.coding-profiles ul {
+    list-style-type: none;
 }
 
-.project-image, .section-image {
-    max-width: 100%;
-    border-radius: 8px;
+.coding-profiles ul li {
+    padding: 5px 0;
 }
 
-ul {
-    padding-left: 20px;
+.coding-profiles a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
